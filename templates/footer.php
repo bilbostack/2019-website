@@ -24,7 +24,7 @@
 
             </div>
             <div class="col-md-3 col-md-offset-2 text-center">
-                <strong>Bilbostack 2018</strong>
+                <strong>Bilbostack 2019</strong>
                 <ul>
                     <li><a href="/codigo-de-conducta/">Código de conducta</a></li>
                     <li><a href="/como-llegar/">Indicaciones de cómo llegar</a>
