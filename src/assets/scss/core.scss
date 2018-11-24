@@ -1,0 +1,170 @@
+$icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
+$fa-font-path: "~font-awesome/fonts";
+$border-radius-base: 0;
+$border-radius-large: $border-radius-base;
+$border-radius-small: $border-radius-base;
+$font-family-sans-serif: 'Roboto', sans-serif;
+$brand-primary: #D09C2E;
+$brand-contrast: rgb(6,38,76);
+$brand-contrast-lighter: rgba(6,38,76,.8);
+$brand-contrast-light: rgba(6,38,76,.05);
+$brand-primary-dark: #A27931;
+$primary-dark-light: rgba(208, 156, 46, .7);
+
+@import '~bootstrap-sass/assets/stylesheets/bootstrap';
+@import "~font-awesome/scss/font-awesome.scss";
+
+#logo{
+  margin-bottom: 60px;
+  display: inline-block;
+  img{
+    width: 300px;
+    height: auto;
+  }
+}
+#logo:hover{
+  opacity: .8;
+}
+
+.small-only{
+  display: none;
+  @media (max-width: $screen-xs-max) {
+    display: block;
+  }
+}
+
+section{
+  h2{
+    font-weight: lighter;
+    strong{
+      color: $brand-contrast
+    }
+  }
+}
+
+body{
+  background: $brand-contrast-light;
+}
+
+.organization-people{
+  img{
+    max-width: 100%;
+  }
+  .big{
+    margin: 20px 0;
+    img{
+      height: 80px;
+      width: auto;
+    }
+  }
+}
+
+.sponsors{
+  margin-top: 60px;
+  margin-bottom: 50px;
+  h2{
+    margin-bottom: 0px;
+  }
+  .thumbnail{
+    border: none;
+    background: none;
+    img{
+      max-width: 100%;
+      height: 80px;
+      width: auto;
+    }
+  }
+}
+
+#speaker, #page{
+  .back{
+    font-size: 1.4rem;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+  }
+}
+
+#page{
+
+  background: #fff;
+  h1, h2, h3{
+    margin-bottom: 20px;
+    margin-top: 40px;
+  }
+  h1{
+    text-align: center;
+    text-transform: uppercase;
+  }
+  article{
+    p, ul, li{
+      font-size: 14px;
+    }
+  }
+}
+#page.where{
+  h1, h2, h3, h4, h5{
+    margin-bottom: 20px;
+    margin-top: 40px;
+  }
+  h1{
+    margin-bottom: 40px;
+  }
+  h5{
+    font-size: 22px;
+  }
+  h4{
+    font-size: 26px;
+  }
+  article{
+    margin-bottom: 80px;
+  }
+  iframe{
+    margin-bottom: 40px;
+  }
+  p{
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 8px;
+  }
+}
+
+p.social{
+  margin-top: 0;
+  margin-bottom: 20px;
+  a{
+    height: 30px;
+    text-align: center;
+    font-size: 24px;
+    color: $brand-contrast;
+    display: inline-block;
+    margin-right: 5px;
+  }
+}
+
+body {
+
+  > footer {
+    h2{
+      font-weight: lighter;
+    }
+  }
+}
+
+p.cc_notice{
+  margin-top: 10px;
+  font-weight: lighter;
+  opacity: .9;
+  a{
+    color: #fff;
+    font-weight: normal;
+    text-decoration: underline;
+  }
+}
+
+.btn-margin{
+  margin-top: 20px;
+  margin-bottom: 80px;
+}
+
+@import 'home.scss';

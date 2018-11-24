@@ -1,0 +1,151 @@
+<?php
+include 'header.php';
+
+?>
+
+        <section id="info">
+
+            <div class="container">
+
+
+
+
+                <article class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <h2 class="text-center">Programa <strong>#Bilbostack2018</strong></h2>
+                        <p class="text-center">
+                            Por séptimo año consecutivo, profesionales nacionales e internacionales referencia del sector tecnológico vendrán a Bilbao a compartir sus conocimientos
+                            sobre las diferentes temáticas más relevantes en la actualidad.
+                        </p>
+                        <p class="text-center">
+                            <?php //<a href="" class="cta underline">Más información</a> o ?>
+                            <a href="#agenda" class="cta">ver la agenda</a>
+                        </p>
+                    </div>
+                </article>
+
+            </div>
+
+
+            <?php if(is_array($speakers) && count($speakers)){ ?>
+            <div id="speakers" class="container speaker-grid">
+                <div class="row">
+                    <?php foreach($speakers as $speaker){ ?>
+
+                        <div class="col-md-4 col-sm-6">
+                            <a href="/speaker/<?php echo $speaker["slug"] ?>/" class="speaker">
+                                <div class="cover_bg"></div>
+                                <div class="image" style="background-image: url('<?php echo $speaker["image"] ?>')">
+
+                                </div>
+                                <div class="details">
+                                    <h4><?php echo $speaker["name"] ?></h4>
+                                    <p><?php echo $speaker["company"] ?></p>
+                                </div>
+                            </a>
+                        </div>
+
+                    <?php } ?>
+                </div>
+            </div>
+            <?php } ?>
+
+        </section>
+
+
+        <section id="agenda">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2 class="text-center">Agenda</h2>
+
+                        <?php include 'agenda.phtml' ?>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <section id="venue">
+            <div class="container-fluid">
+
+                <h2 class="visible-sm visible-xs text-center">Lugar de encuentro</h2>
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="venue">
+                            <img src="https://farm6.staticflickr.com/5080/14153485109_d171b04c20_k_d.jpg" alt="" class="img-responsive">
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+
+                        <h2 class="hidden-sm hidden-xs">Lugar de encuentro</h2>
+                        <h4>Palacio Euskalduna Jauregia</h4>
+                        <p>Fue concebido por sus arquitectos, Dolores Palacios y Federico Soriano, como una nave en permanente construcción que emerge del dique en el que estuvo el <a href="https://es.wikipedia.org/wiki/Astilleros_Euskalduna" target="_blank">Astillero Euskalduna</a>.</p>
+                        <p>El Palacio Euskalduna fue construído en 1994 convirtiéndose en un lugar icónico de la ciudad y obtuvo el Premio Enric Miralles 2001 en la VI Bienal de la Arquitectura Española.</p>
+
+                        <div class="text-center">
+                            <a href="/como-llegar/" class="btn btn-primary btn-lg btn-margin">Cómo llegar e indicaciones</a>
+
+                        </div>
+
+                        <p>
+                            <small>
+                                Foto por <a href="https://www.flickr.com/photos/96028744@N03/14153485109" target="_blank">Lomunet Arratiko</a></small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="where">
+
+            <h2 class="text-center">Localización</h2>
+            
+            
+
+
+
+
+            <div class="place_container">
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="places">
+                                <div class="place">
+                                    <h4>Palacio Euskalduna Jauregia</h4>
+                                    <p>Abandoibarra Etorb., 4, 48011 Bilbo, Bizkaia</p>
+                                    <p><a href="https://www.google.es/maps/place/Palacio+Euskalduna+Jauregia/@43.266915,-2.944521,15z/data=!4m2!3m1!1s0x0:0xdd291c55d656c0a1?sa=X&ved=0ahUKEwi_9sfjifrWAhUEY1AKHYsiCGcQ_BIIfjAR" target="_blank">abrir en google maps</a></p>
+
+                                    <hr>
+                                    <h4>Lugar del networking</h4>
+                                    <p>Taberna Plaza Nueva, Plaza Nueva, Bilbao</p>
+
+                                    <hr>
+                                    <div >
+                                        <a href="/como-llegar/" class="btn btn-default btn-lg btn-block">Más indicaciones en detalle</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="map">
+
+            </div>
+
+
+
+        </section>
+
+
+<?php include 'footer.php' ?>
