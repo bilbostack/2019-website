@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8"/>
-    <title>Bilbostack 2018 - 27 de Enero en Bilbao</title>
+    <title>Bilbostack 2019 - 26 de Enero en Bilbao</title>
     <meta name="description" content="Profesionales referencia del sector tecnológico vendrán a Bilbao a compartir sus conocimientos
                             sobre las diferentes temáticas más relevantes en la actualidad.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -31,10 +31,10 @@
             <a id="logo" href="/">
                 <img src="/assets/img/bs_light_w.png" alt="Bilbostack">
             </a>
-            <h3>27 de Enero del 2018</h3>
-            <h2>7ª Edición de la cita tecnológica anual más esperada en Bilbao</h2>
-            <a href="http://bilbostack2018.eventbrite.com/" class="btn btn-primary btn-lg">
-                Consigue tu entrada
+            <h3>26 de Enero del 2019</h3>
+            <h2>8ª Edición de la cita tecnológica anual más esperada en Bilbao</h2>
+            <a href="" class="btn btn-primary btn-lg btn-disabled">
+                Entradas aún no disponibles
             </a>
             <p class="text-center cc_notice">
                 No olvides leer <a href="/codigo-de-conducta/">nuestro código de conducta</a>
