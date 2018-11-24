@@ -26,13 +26,12 @@ body{
     position: relative;
     height: 490px;
     overflow: hidden;
-    background-color: #000;
+    background-color: $brand-contrast;
 
     .bg{
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center center;
-      background-image: url('https://instagram.fbio1-1.fna.fbcdn.net/t51.2885-15/e15/10932279_1404119786553301_388486752_n.jpg');
       -webkit-filter: blur(8px);
       -moz-filter: blur(8px);
       -o-filter: blur(8px);
@@ -76,7 +75,7 @@ body{
   }
 
   #agenda{
-    background: #5B7189;
+    background: #544147;
     color: #fff;
 
     table{

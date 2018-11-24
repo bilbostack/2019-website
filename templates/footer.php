@@ -59,7 +59,6 @@
 
 
 <script src="/assets/build/app.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAp8OyGBJQ1_qHkGT10QVpPzMYGVjGOGCI"
-         ></script>
+
 </body>
 </html>
