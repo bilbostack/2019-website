@@ -12,10 +12,10 @@
             <div class="col-xs-8">
 
                 <h1><?php echo $speaker["name"] ?></h1>
-                <h4><?php echo $speaker["company"] ?></h4>
+                <h4><a href='<?php echo $speaker["company_web"] ?>' target="_blank"><?php echo $speaker["company"] ?></a></h4>
 
                 <p class="social">
-                    <?php foreach (['twitter', 'linkedin', 'github'] as $key){ if($speaker[$key]){ ?>
+                    <?php foreach (['twitter', 'linkedin', 'github', 'web'] as $key){ if($speaker[$key]){ ?>
                         <a href="<?php echo $speaker[$key] ?>"
                            target="_blank"
                            class="social"
