@@ -13,7 +13,7 @@
     <meta property="og:image:width" content="982" />
     <meta property="og:image:height" content="517" />
     <meta property="og:url" content="http://bilbostack.com">
-    <meta property="og:title" content="Bilbostack 2018 - 27 de Enero en Bilbao">
+    <meta property="og:title" content="Bilbostack 2019 - 26 de Enero en Bilbao">
     <meta property="og:description" content="Profesionales referencia del sector tecnológico vendrán a Bilbao a compartir sus conocimientos
                             sobre las diferentes temáticas más relevantes en la actualidad.">
     <style>
