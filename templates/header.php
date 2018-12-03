@@ -33,8 +33,8 @@
             </a>
             <h3>26 de Enero del 2019</h3>
             <h2>8ª Edición de la cita tecnológica anual más esperada en Bilbao</h2>
-            <a href="" class="btn btn-primary btn-lg btn-disabled">
-                Entradas aún no disponibles
+            <a href="https://www.eventbrite.es/e/entradas-bilbostack-2019-53009526922" class="btn btn-primary btn-lg">
+                Entradas a la venta aquí
             </a>
             <p class="text-center cc_notice">
                 No olvides leer <a href="/codigo-de-conducta/">nuestro código de conducta</a>
