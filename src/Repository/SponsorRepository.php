@@ -20,9 +20,26 @@ class SponsorRepository{
         $this->data = Yaml::parse(file_get_contents($yaml_file));
     }
 
-    function getData()
+    function getNotFeatured()
     {
-        return $this->data;
+        $items = [];
+        foreach($this->data as $item)
+        {
+            if(!isset($item["featured"]) || !$item["featured"])
+                $items[] = $item;
+        }
+        return $items;
+    }
+
+    function getFeatured()
+    {
+        $items = [];
+        foreach($this->data as $item)
+        {
+            if(isset($item["featured"]) && $item["featured"])
+                $items[] = $item;
+        }
+        return $items;
     }
 
 
