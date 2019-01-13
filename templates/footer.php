@@ -35,12 +35,21 @@
             </div>
         </div>
 
-        <?php if(count($sponsors)){ ?>
+        <?php if(count($sponsors_f) || count($sponsors_nf) ){ ?>
         <div class="sponsors row">
             <h2 class="text-center">Patrocinan</h2>
 
             <div class="organization-people">
-                <?php foreach ($sponsors as $sponsor) { ?>
+                <?php foreach ($sponsors_f as $sponsor) { ?>
+                    <div class="col-md-6 featured text-center">
+                        <a href="<?php echo $sponsor["link"] ?>"
+                           title="<?php echo $sponsor["name"] ?>" target="_blank" class="big thumbnail">
+                            <img src="<?php echo $sponsor["img"] ?>" alt="<?php echo $sponsor["name"] ?>">
+                        </a>
+                    </div>
+
+                <?php } ?>
+                <?php foreach ($sponsors_nf as $sponsor) { ?>
                     <div class="col-md-4 text-center">
                         <a href="<?php echo $sponsor["link"] ?>"
                            title="<?php echo $sponsor["name"] ?>" target="_blank" class="big thumbnail">

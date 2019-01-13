@@ -18,6 +18,7 @@ $app->get('/codigo-de-conducta/', function (\Slim\Http\Request $request, $respon
     return $this->renderer->render($response, 'coc.php');
 });
 
+
 $app->get('/como-llegar/', function (\Slim\Http\Request $request, $response, $args) {
     return $this->renderer->render($response, 'como_llegar.php');
 });
@@ -29,17 +30,20 @@ $app->get('/', function ($request, $response, $args) {
     $sponsorRepo = new \Bilbostack\Repository\SponsorRepository(__DIR__ . '/../data/sponsors.yml');
     $speakers = $spRepo->getData() ?:array();
     $org = $orgRepo->getData() ?:array();
-    $sponsors = $sponsorRepo->getData() ?:array();
+    $sponsors_f  = $sponsorRepo->getFeatured() ?:array();
+    $sponsors_nf = $sponsorRepo->getNotFeatured() ?:array();
+
     shuffle($speakers);
     shuffle($org);
-    shuffle($sponsors);
-
+    shuffle($sponsors_nf);
+    shuffle($sponsors_f);
 
 
     // Render index view
     return $this->renderer->render($response, 'index.phtml', [
         "speakers"     => $speakers,
-        "sponsors"     => $sponsors,
+        "sponsors_f"     => $sponsors_f,
+        "sponsors_nf"     => $sponsors_nf,
         "org"          => $org,
         "talk_helper"  => function($speaker_slug, $key="title") use($speakers)
         {
